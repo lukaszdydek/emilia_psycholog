@@ -8,7 +8,15 @@
     src: url('../fonts/Ubuntu-Light.ttf') format('truetype');
 }
 
-
+@keyframes wlot {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(3000px);
+        
+    }
+}
 
 /*reset*/
 * {
@@ -35,6 +43,7 @@
     display: grid;
     grid-template-columns: 2fr 3fr 5fr;
     overflow-y: auto;
+    
 }
 
 
@@ -42,8 +51,11 @@
 /*left-column menu container*/
 .left__column {
     display: grid;
-    grid-template-rows: 7fr 3fr 1fr;
-    background-color: rgb(255, 245, 0);
+    left: -3000px;
+    position: relative;
+    grid-template-rows: 7fr 3fr 3fr;
+    background-color: rgba(57, 102, 248, 0.1);
+    animation: wlot 1s ease-out forwards;
 }
 
 .left__column--container {
@@ -64,6 +76,8 @@
 
 .left__column h1 {
     padding-left: 10%;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+   
     
 }
 
@@ -73,15 +87,15 @@
 }
 
 .left__column--menu {
-    padding: 3em 10% 10% 10%;
+    padding-left: 10%;
     
 }
 
 .left__column--menu li {
 padding: 0.5em 0;
 list-style: none;
-
-
+font-weight: bold;
+font-size: 1.2em;
 }
 
 
@@ -90,11 +104,15 @@ list-style: none;
 /*middle column with photo background*/
 .middle__column {
     display: grid;
-    grid-template-rows: 7fr 3fr 1fr;
+    grid-template-rows: 1fr;
     background: url(../img/mama_podnosi_dziecko.jpg);   
     background-repeat: no-repeat;
-    background-size: 100% 100vh;
-  
+    background-size: 100% 100%;
+    left: -3000px;
+    position: relative;
+    animation: wlot 1s ease-out forwards;
+    animation-delay: 0.3s;
+    
 }
 
 
@@ -103,7 +121,30 @@ list-style: none;
 /*right column with content*/
 .right__column {
     display: grid;
-    grid-template-rows: 7fr 3fr 1fr;
-    background-color: royalblue;
+    grid-template-rows: 0.5fr 4fr 4fr 2fr 0.5fr;
+    background-color: rgba(57, 102, 248, 0.1);
+    left: -3000px;
+    position: relative;
+    animation: wlot 1s ease-out forwards;
+    animation-delay: 0.4s;
     
+}
+
+.right__column div:nth-child(3) {
+    padding-top: 4%;
+    
+
+}
+
+
+.right__column h1 {
+    text-align: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    padding-bottom: 2%;
+}
+
+.right__column p {
+    padding-left: 5%;
+    line-height: 1.7em;
+    text-indent: 3em;
 }
