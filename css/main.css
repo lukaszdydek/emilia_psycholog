@@ -34,17 +34,22 @@
     border-bottom: solid 2px #3966f8;
 }
 
+:any-link:hover::after {
+    content: " >>>";
+    color: #3966f8;
+}
 
 /*grid container for whole page*/
 .container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     display: grid;
     grid-template-columns: 2fr 8fr;
     overflow-y: auto;
     background-image: url(../img/pexels-katie-e-3663036.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
     
 }
 
@@ -53,6 +58,9 @@
 /*left-column menu container*/
 .left__column {
     display: grid;
+    top: 0;
+    bottom: 100%;
+    max-height: 100vh;
     left: -3000px;
     position: relative;
     grid-template-rows: 7fr 3fr 3fr;
@@ -92,12 +100,13 @@
 .left__column h1 {
     padding-left: 10%;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-   
+    
     
 }
 
 .left__column p {
-    padding-left: 10%;
+    text-align: center;
+    font-size: 0.8em;
     letter-spacing: 4px;
 }
 
@@ -109,12 +118,13 @@
 .left__column--menu li {
 padding: 0.5em 0;
 list-style: none;
-font-weight: bold;
-font-size: 1.2em;
+font-size: 1em;
 }
 
 
 /*right column with content*/
+
+
 .right__column {
     display: grid;
     grid-template-rows: 3fr 3fr 1fr;
@@ -122,41 +132,78 @@ font-size: 1.2em;
     position: relative;
     animation: wlot 1s ease-out forwards;
     animation-delay: 0.4s;
-    
     padding: 1%;
-    
-
-    
 }
 
-.right__column div {
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: rgba(57, 102, 248, 0.1);
-}
-
-.right__column div:nth-child(1) {
+.right__column--top {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
-.right__column div:nth-child(3) {
-    display: flex;
-    flex-direction: row;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    justify-content: center;
-}
 
 .right__column h1 {
     text-align: center;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     padding-top: 2%;
+    padding-bottom: 1%;
 }
 
 .right__column p {
     padding: 0 5% 0 5%;
     line-height: 1.7em;
     text-indent: 3em;
+}
+
+.right__column--middle {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.right__column--help {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3%;
+    margin: 0 2.5% 0 1%;
+}
+
+.right__column--help div {
+    padding: 6% 3%;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.right__column--help div:nth-child(1) {
+background-image: url(../img/dziecko_i_mis.jpg);
+background-size: cover;
+}
+
+.right__column--help div:nth-child(2) {
+    background-image: url(../img/child\ sleep.jpg);
+    background-size: cover;
+    color: black;
+}
+
+.right__column--help div:nth-child(3) {
+    background-image: url(../img/emotional_child.jpg);
+    background-size: cover;
+}
+
+.right__column--help div:nth-child(4) {
+    background-image: url(../img/school_peers.jpg);
+    background-size: cover;
+    color: black;
+}
+
+.right__column--bottom {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .cta__button {
@@ -166,7 +213,7 @@ font-size: 1.2em;
     width: 300px;
     height: 60px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-80%);
     font: 1.2em  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
     border: solid 0.5px rgb(255, 245, 0);
@@ -178,4 +225,11 @@ font-size: 1.2em;
     color: white;
     transition: 0.3s ease-in-out;
     border: solid 0.5px #e66465;
+}
+
+.right__column--copyright {
+    position: absolute;
+    font-size: 0.6em;
+    bottom: 2em;
+    right: 2em;
 }
