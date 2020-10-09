@@ -30,14 +30,8 @@
     color: black;
 }
 
-:any-link:hover {
-    border-bottom: solid 2px #3966f8;
-}
 
-:any-link:hover::after {
-    content: " >>>";
-    color: #3966f8;
-}
+
 
 /*grid container for whole page*/
 .container {
@@ -121,9 +115,21 @@ list-style: none;
 font-size: 1em;
 }
 
+.left__column--menu a:hover {
+    border-bottom: solid 2px #3966f8;
+}
+
+
+
+
+
 
 /*right column with content*/
 
+
+.hero__image--mobile, .hero__image--mobile2, .menu__button, .mobile__menu, .mobile__menu--container, .mobile__contact {
+    display: none;
+}
 
 .right__column {
     display: grid;
@@ -155,6 +161,10 @@ font-size: 1em;
     text-indent: 3em;
 }
 
+.right__column a:hover {
+    border-bottom: solid 2px #3966f8;
+}
+
 .right__column--middle {
     background-color: rgba(255, 255, 255, 0.8);
 }
@@ -168,7 +178,7 @@ font-size: 1em;
 
 .right__column--help div {
     padding: 6% 3%;
-    color: white;
+    color: black;
     font-weight: 500;
     width: 100%;
     height: 100%;
@@ -176,25 +186,19 @@ font-size: 1em;
 }
 
 .right__column--help div:nth-child(1) {
-background-image: url(../img/dziecko_i_mis.jpg);
-background-size: cover;
+background-color: rgba(12, 46, 110, 0.6);
 }
 
 .right__column--help div:nth-child(2) {
-    background-image: url(../img/child\ sleep.jpg);
-    background-size: cover;
-    color: black;
+    background-color: rgba(156, 167, 15, 0.8);
 }
 
 .right__column--help div:nth-child(3) {
-    background-image: url(../img/emotional_child.jpg);
-    background-size: cover;
+    background-color: rgba(12, 46, 110, 0.6);
 }
 
 .right__column--help div:nth-child(4) {
-    background-image: url(../img/school_peers.jpg);
-    background-size: cover;
-    color: black;
+    background-color: rgba(156, 167, 15, 0.8);
 }
 
 .right__column--bottom {
@@ -222,7 +226,7 @@ background-size: cover;
 
 .cta__button:hover {
     background: linear-gradient(#e66465, #e66465);
-    color: white;
+    color: black;
     transition: 0.3s ease-in-out;
     border: solid 0.5px #e66465;
 }
@@ -233,3 +237,217 @@ background-size: cover;
     bottom: 2em;
     right: 2em;
 }
+
+
+
+
+
+
+
+
+/*mobile version*/
+
+@media screen and (max-width:768px) {
+    
+.container {
+    display: block;
+    background-color: #3966f8;
+    background-image: none;
+}
+
+/* mobile menu */
+
+.mobile__menu--container {
+    display: block;
+}
+
+.menu__button {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    padding: 5px 8px;
+    display: inline;
+    cursor: pointer;
+    background-color:rgba(57, 102, 248, 0.8);
+    border: none;
+    border-radius: 12px;
+    margin: 0;
+    transition: 0.5s ease-out;
+    outline: none;
+    z-index: 20;
+    
+}
+
+.menu__button--clicked {
+    
+    transition: 0.5s ease-out;
+    outline: none;
+}
+
+.menu__button--wrapper {
+    width: 3em;
+    height: 3em;
+    display: inline-block;
+    position: relative;
+}
+
+.menu__button--middle__line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 1s ease-out;
+
+}
+
+
+.menu__button--middle__line::before {
+    width: 100%;
+    height: 1.5px;
+    background-color: white;
+    position: absolute;
+    top: -1em;
+    left: 0;
+    content: '';
+    transition: 1s ease-out;
+} 
+
+.menu__button--middle__line::after {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 1em;
+    left: 0;
+    content: '';
+    transition: 1s ease-out;
+}
+
+
+.menu__button--clicked .menu__button--middle__line {
+    background-color: transparent;
+    transition: 0.5s ease-out;
+}
+
+
+.menu__button--clicked .menu__button--middle__line::before {
+    transform: translateY(1em) rotate(45deg);
+    transition: 0.5s ease-out;
+}
+
+.menu__button--clicked .menu__button--middle__line::after {
+    transform: translateY(-1em) rotate(-45deg);
+    transition: 0.5s ease-out;
+}
+
+.mobile__contact--active {
+    position: fixed;
+    display: inline-block;
+    top: 1em;
+    right: 1em;
+    z-index: 20;
+   
+}
+
+.mobile__contact--active img {
+    width: 2.5em;
+}
+
+.mobile__menu--active {
+    display: block;
+    position: fixed;
+    left: 0em;
+    top: 0em;
+    padding: 5em 0 5em 0;
+    z-index: 10;
+    width: 100%;
+    background-color: rgba(12, 46, 110, 0.9);
+    text-align: center;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    
+}
+
+.mobile__menu--active a {
+    display: block;
+    padding-bottom: 3%;
+    color: white;
+    font-size: 1.5em;
+}
+
+.mobile__menu--active a:active {
+    color: yellow;
+}
+
+/*mobile column*/
+
+
+.left__column {
+display: none;
+}
+
+.hero__image--mobile {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+   
+}
+
+.hero__image--mobile2 {
+    display: block;
+    width: 100%;
+}
+
+.right__column {
+    display: block;
+}
+
+.right__column--top, .right__column--middle {
+    padding-bottom: 20%;
+    border-radius: 0;
+}
+
+.right__column h1 {
+    padding: 10% 0 5% 0;
+}
+
+
+.right__column--help {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.right__column--help div {
+    max-width: 90%;
+    margin: 2% 5% 2% 3%;
+}
+
+.right__column--bottom {
+    padding: 10% 0 20% 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.cta__button {
+    position: relative;
+    border-radius: 12px;
+    width: 250px;
+    height: 50px;
+    top: none;
+    transform: none;
+    align-content: center;
+    font: 1em  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+}
+
+
+
+
+
+
