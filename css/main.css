@@ -87,14 +87,14 @@
 .left__column img {
     display: inline-block;
     border-radius: 50%;
-    width: 30%;
+    width: 40%;
 
 }
 
 .left__column h1 {
     padding-left: 10%;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    
+   
     
 }
 
@@ -127,7 +127,7 @@ font-size: 1em;
 /*right column with content*/
 
 
-.hero__image--mobile, .hero__image--mobile2, .menu__button, .mobile__menu, .mobile__menu--container, .mobile__contact {
+.hero__image--mobile, .hero__image--mobile2, .menu__button, .mobile__menu, .mobile__menu--container, .mobile__contact, .mobile__photo {
     display: none;
 }
 
@@ -259,6 +259,7 @@ background-color: rgba(12, 46, 110, 0.6);
 
 .mobile__menu--container {
     display: block;
+    
 }
 
 .menu__button {
@@ -343,11 +344,21 @@ background-color: rgba(12, 46, 110, 0.6);
     transition: 0.5s ease-out;
 }
 
+.mobile__photo--active {
+    position: fixed;
+    display: inline;
+    top: 1em;
+    right: 1em;
+    height: 4em;
+    border-radius: 50%;
+    z-index: 20;
+}
+
 .mobile__contact--active {
     position: fixed;
     display: inline-block;
-    top: 1em;
-    right: 1em;
+    top: 14em;
+    left: 1em;
     z-index: 20;
    
 }
