@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emilia Chaber - strona główna</title>
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/subcss/glowna.css" type="text/css">
 </head>
 <body>
     <div class="container">
@@ -17,25 +18,23 @@
                 <p>PSYCHOLOG DZIECIĘCY</p>
                 
             </div>
-            
-            <div>
-                <!--
-                <div><a href="#"><img src="svg/mail.svg" alt="Ikona kontaktu przez pocztę e-mail"></a></div>
-                <div><a href="#"><img src="svg/phone_portrait.svg" alt="Ikona kontaktu przez telefon"></a></div>
-            -->
-            </div>
-            
+                        
             <div>
                 <navigation>
                     <ul class="left__column--menu">
-                        <li><a href="#" title="Poznaj mnie lepiej.">O MNIE</a></li>
+                        <li><a href="o_mnie.html" title="Poznaj mnie lepiej.">O MNIE</a></li>
                         <li><a href="#" title="Poznaj ofertę, czyli w czym mogę pomóc Twojemu dziecku.">OFERTA</a></li>
                         <li><a href="#" title="Poznajmy się.">KONTAKT</a></li>
                     </ul>
                 </navigation>
             </div>
 
-            
+            <div class="left__column--contact">
+                
+               <a href="mailto:chaberemilia@gmail.com"><img src="svg/mail.svg" alt="Ikona kontaktu przez pocztę e-mail"></a>
+                <a href="tel:509105711"><img src="svg/phone_portrait.svg" alt="Ikona kontaktu przez telefon"></a>
+                <a href="https://www.znanylekarz.pl/emilia-chaber/psycholog-psycholog-dzieciecy/rzeszow"><img src="img/znanylekarz-ikona.png" alt="Ikona profilu w serwisie znanylekarz.pl."></a>
+            </div>
 
         </div>
         
@@ -50,19 +49,20 @@
         <img src="img/emilia.jpg" alt="Zdjęcie twarzy Emilii Chaber" class="mobile__photo">
         
         <div class="mobile__contact">
-            <a href="#"><img src="svg/mail.svg" alt="Ikona kontaktu przez pocztę e-mail"></a>
-        <a href="#"><img src="svg/phone_portrait.svg" alt="Ikona kontaktu przez telefon"></a>
+            <a href="mailto:chaberemilia@gmail.com"><img src="svg/mail.svg" alt="Ikona kontaktu przez pocztę e-mail"></a>
+            <a href="tel:509105711"><img src="svg/phone_portrait.svg" alt="Ikona kontaktu przez telefon"></a>
+            <a href="https://www.znanylekarz.pl/emilia-chaber/psycholog-psycholog-dzieciecy/rzeszow"><img src="img/znanylekarz-ikona.png" alt="Ikona profilu w serwisie znanylekarz.pl."></a>
         </div>
 
         <div class="mobile__menu">
             <navigation>
-                <a href="#" title="Poznaj mnie lepiej.">O MNIE</a>
+                <a href="o_mnie.html" title="Poznaj mnie lepiej.">O MNIE</a>
                     <a href="#" title="Poznaj ofertę, czyli w czym mogę pomóc Twojemu dziecku.">OFERTA</a>
                     <a href="#" title="Poznajmy się.">KONTAKT</a>
             </navigation>
         </div>
     </div>
-
+<!--Right column with main content-->
         <div class="right__column">
             <img src="img/pexels-katie-e-3663036.jpg" alt="Małe dziecko bawi się włosami i okularami uśmiechniętej mamy." class="hero__image--mobile"> 
             <div class="right__column--top">
@@ -124,7 +124,8 @@
             </div>
 
             <div class="right__column--bottom">
-                <button class="cta__button">UMÓW SIĘ NA SPOTKANIE</button>
+                
+                <div><a class="cta__button" href="kontakt.html">UMÓW SIĘ NA SPOTKANIE</a></div>
                 
             </div>
             <span class="right__column--copyright">Copyright Emilia Chaber © 2020 | Wykonanie: Łukasz Dydek</span>
@@ -132,5 +133,6 @@
 
     </div>
     <script src="js/main.js"></script>
+    <script src="js/glowna.js"></script>
 </body>
 </html>
