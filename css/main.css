@@ -178,6 +178,12 @@ display:table-cell;
     padding-bottom: 1%;
 }
 
+.right__column h2 {
+    text-align: left;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    padding: 2% 5% 1% 5%;
+}
+
 .right__column p {
     padding: 0 5% 0 5%;
     line-height: 1.7em;
