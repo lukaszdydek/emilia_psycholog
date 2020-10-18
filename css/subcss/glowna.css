@@ -60,7 +60,7 @@
 .cta__button {
     position: relative;
     background: linear-gradient(#e66465, rgb(255, 245, 0));
-    border-radius: 16px;
+    border-radius: 12px;
     padding: 0.5em;
     width: 300px;
     height: 60px;
@@ -91,18 +91,22 @@
     }
     
     .collapsible__button {
-        font-size: 1em;
+        font-size: 0.9em;
+    }
+
+    .right__column--bottom div {
+        width: 90%;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
     }
 
     .cta__button {
-        position: relative;
         border-radius: 12px;
-        width: 250px;
-        height: 50px;
+        padding: 16px;
         top: none;
         transform: none;
-        align-content: center;
-        font: 1em  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font: 1.2em  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       
     }
 

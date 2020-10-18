@@ -1,6 +1,20 @@
+.left__column {
+    height: 95%;
+}
+
+.right__column {
+    height: 95%;
+}
+
+li {
+    padding: 0 5% 0 0;
+    line-height: 1.7em;
+}
+
 .right__column--top {
     display: grid;
     grid-template: 1fr 3fr / 1.5fr 3fr;
+    padding-bottom: 2em;
 }
 
 .right__column--top h1 {
@@ -18,6 +32,11 @@ padding: 0 0 0 15%;
    
 }
 
+.right__column--middle {
+    background-color: lightgray;
+    border-top: solid 1px  #3966f8;
+    border-bottom: solid 1px  #3966f8;
+}
 
 .right__column--bottom {
     padding: 2% 0 2% 0;    

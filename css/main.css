@@ -42,7 +42,7 @@
     position: fixed;
     display: grid;
     grid-template-columns: 2fr 8fr;
-    overflow-y: auto;
+    overflow-y: hidden;
     background-image: url(../img/pexels-katie-e-3663036.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -55,8 +55,7 @@
 .left__column {
     display: grid;
     top: 0;
-    bottom: 100%;
-    max-height: 100vh;
+    height: 97%;
     left: -3000px;
     position: relative;
     grid-template-rows: 8fr 2fr 1fr;
@@ -161,13 +160,13 @@ display:table-cell;
 
 .right__column {
     left: -3000px;
-    max-height: fit-content;
+    height: 97%;
     position: relative;
     animation: wlot 0.7s ease-out forwards;
     animation-delay: 0.4s;
     margin: 1%;
     border-radius: 12px;
-    overflow: auto;
+   overflow: auto;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -194,8 +193,7 @@ display:table-cell;
     border-bottom: solid 2px #3966f8;
 }
 
-.right__column--middle {
-    
+.right__column--middle { 
     padding-bottom: 5%;
 }
 
@@ -413,6 +411,7 @@ display: none;
     padding: 10% 0 20% 0;
     display: flex;
     flex-direction: column;
+    justify-items: center;
 }
 
 .right__column--copyright {
