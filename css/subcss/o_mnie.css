@@ -17,9 +17,8 @@
 }
 
 .right__column--middle {
-    background-color: rgba(57, 102, 248, 0.3);
-    border-top: solid 1px  #3966f8;
-    border-bottom: solid 1px  #3966f8;
+    background-color: white;
+
 }
 
 .right__column--bottom {    

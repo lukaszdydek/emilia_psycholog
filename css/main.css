@@ -188,6 +188,7 @@ display:table-cell;
 .right__column p {
     line-height: 1.7em;
     text-indent: 2.5em;
+    
 }
 
 .right__column a:hover {
@@ -398,7 +399,10 @@ display: none;
     height: 100%;
 }
 
-
+.right__column p {
+    padding: 0 0.5em;
+    text-align: justify;
+}
 
 .right__column--bottom {
     display: flex;
@@ -411,7 +415,7 @@ display: none;
 .right__column--copyright {
    text-indent: 0 !important;
    float: none;
-   text-align: center;
+   text-align: center !important;
    margin: 2em 0 1em 0;
 }
 
