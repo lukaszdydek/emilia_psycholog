@@ -1,12 +1,4 @@
-.left__column {
-    height: 95%;
-}
-
-.right__column {
-    height: 95%;
-}
-
-li {
+.right__column li {
     padding: 0 5% 0 0;
     line-height: 1.7em;
 }
