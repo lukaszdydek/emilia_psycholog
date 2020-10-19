@@ -398,6 +398,7 @@ display: none;
 .right__column {
     display: block;
     margin: 0.2em;
+    height: 100%;
 }
 
 .right__column--top, .right__column--middle {
