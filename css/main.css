@@ -55,7 +55,7 @@
 .left__column {
     display: grid;
     top: 0;
-    max-height: 100%;
+    max-height: fit-content;
     left: -3000px;
     position: relative;
     grid-template-rows: 6fr 2fr 1fr;
@@ -161,7 +161,7 @@ display:table-cell;
 
 .right__column {
     left: -3000px;
-    max-height: 100%;
+    max-height: fit-content;
     position: relative;
     animation: wlot 0.7s ease-out forwards;
     animation-delay: 0.4s;
