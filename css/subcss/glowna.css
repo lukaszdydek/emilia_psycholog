@@ -12,15 +12,15 @@
 }
 
 .right__column--help button:nth-of-type(1) {
-    background-color: rgba(57, 102, 248,0.5);
+    background-color: rgba(57, 102, 248,0.2);
 }
 
 .right__column--help button:nth-of-type(2) {
-    background-color:  rgba(57, 102, 248,0.8);
+    background-color:  rgba(57, 102, 248,0.4);
 }
 
 .right__column--help button:nth-of-type(3) {
-    background-color: rgba(57, 102, 248,1);
+    background-color: rgba(57, 102, 248,0.6);
 }
 
 .active, .collapsible__button:hover {
@@ -48,14 +48,16 @@
 
 .collapsible__content--active {
     display: block;
-    background-color: rgba(57, 102, 248,0.3);
+    background-color: rgba(57, 102, 248,0.1);
     width: 90%;
     padding: 1em 0 1em 0;
     line-height: 1.5em;
     transition: max-height 0.4s ease-out;
 }
 
-
+.right__column--bottom div {
+    margin: 1em 0 1em 0;
+}
 
 .cta__button {
     position: relative;
@@ -83,7 +85,6 @@
     .right__column--help {
         display: flex;
         flex-direction: column;
-       
     }
     
     .right__column--help div {
@@ -99,6 +100,8 @@
         height: 30px;
         line-height: 30px;
         text-align: center;
+        margin: 2em 0 2em 0;
+        
     }
 
     .cta__button {
