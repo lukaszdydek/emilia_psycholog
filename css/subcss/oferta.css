@@ -18,6 +18,7 @@
 
 .section__text {
     padding: 1em 1em 1em 0;
+    width: 50%;
 }
 
 .section__text--list li {
@@ -67,6 +68,11 @@
     .section__image1, .section__image2, .section__image3 {
         float: none;
         width: 100%;
+    }
+
+    .section__text {
+        padding: 1em 1em 1em 0;
+        width: inherit;
     }
     
     .cta__button {
