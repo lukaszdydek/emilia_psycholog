@@ -25,10 +25,6 @@
     display: block;
 }
 
-.right__column--bottom ul {
-    list-style-image: url('/svg/check_circle.svg');
-}
-
 @media screen and (max-width:768px) {
 
     .right__column--top--photo {

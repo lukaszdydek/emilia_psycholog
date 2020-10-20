@@ -44,9 +44,7 @@
     grid-template-columns: 2fr 8fr;
     overflow-y: hidden;
     background-image: url(../img/pexels-katie-e-3663036.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    
+    background-size: cover;    
 }
 
 
@@ -90,8 +88,8 @@
     display: inline-block;
     border-radius: 50%;
     width: 100%;
-    display:table-cell; 
-    vertical-align:middle;
+    display: table-cell; 
+    vertical-align: middle;
 
 }
 
@@ -224,6 +222,7 @@ display:table-cell;
     
 .container {
     display: block;
+    height: 100%;
     background-color: #3966f8;
     background-image: none;
 }
