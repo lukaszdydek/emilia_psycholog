@@ -1,4 +1,6 @@
-
+.right__column h1 {
+    font-size: 2em;
+}
 
 .section {
     display: flex;
@@ -23,6 +25,10 @@
 
 .section__text--list li {
     line-height: 1.5em;
+}
+
+.right__column--middle p {
+    text-indent: 0;
 }
 
 .cta__button {

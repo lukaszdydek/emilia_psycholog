@@ -213,7 +213,7 @@ display:table-cell;
 }
 
 .right__column--top, .right__column--middle, .right__column--bottom {
-    padding: 1.5%;
+    padding: 1.5% 1.5% 2.5% 1.5%;
 }
 
 .right__column--bottom { 
@@ -436,6 +436,10 @@ display: none;
 .right__column p {
     padding: 0 0.5em;
     text-align: justify;
+}
+
+.right__column--top, .right__column--middle {
+    padding-bottom: 4em;
 }
 
 .right__column--bottom {

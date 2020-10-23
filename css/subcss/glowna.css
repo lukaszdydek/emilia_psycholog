@@ -1,3 +1,7 @@
+.right__column h1 {
+    font-size: 2em;
+}
+
 .right__column--help {
     display: flex;
     flex-direction: column;
@@ -55,6 +59,15 @@
     transition: max-height 0.4s ease-out;
 }
 
+.hero__image--mobile3 {
+    display: none;
+} 
+
+
+.right__column--middle2 {
+    padding: 1.5% 1.5% 2.5% 1.5%;
+}
+
 .right__column--bottom div {
     margin: 1em 0 1em 0;
 }
@@ -93,6 +106,15 @@
     
     .collapsible__button {
         font-size: 0.9em;
+    }
+
+    .hero__image--mobile3 {
+        display: block;
+        width: 100%;
+    }
+
+    .right__column--middle2 {
+        padding-bottom: 1em;
     }
 
     .right__column--bottom div {

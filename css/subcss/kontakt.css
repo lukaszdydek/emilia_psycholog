@@ -1,6 +1,10 @@
 
 /* Contact section */
 
+.right__column--top, .right__column--middle {
+    padding-bottom: 0em;
+}
+
 .right__column--middle {
     display: flex;
     flex-direction: row;  
@@ -26,6 +30,10 @@
 
 @media screen and (max-width:768px) {
    
+    .right__column--top, .right__column--middle {
+        padding-bottom: 0em;
+    }
+
     .right__column--middle {
         flex-direction: column;  
     }
