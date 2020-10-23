@@ -81,6 +81,7 @@
     display:table;
     border-bottom: solid 2px #3966f8;
     background-color: none;
+    padding: 0 0 2% 0 !important;
    
 }
 
@@ -94,7 +95,7 @@
 }
 
 .left__column h1 {
-    padding-left: 5%;
+    padding-left: 2%;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     display:table-cell; 
     vertical-align:middle;
@@ -170,8 +171,9 @@ display:table-cell;
 }
 
 .right__column h1 {
-    text-align: center;
-    padding-bottom: 0.5em;
+    border-left: solid 0.1em #3966f8;
+    padding-left: 0.3em;
+    margin-bottom: 0.5em;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     
 }
