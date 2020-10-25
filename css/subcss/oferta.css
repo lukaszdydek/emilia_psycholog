@@ -1,4 +1,4 @@
-.right__column h1 {
+.right__column h2 {
     font-size: 2em;
 }
 
@@ -64,7 +64,8 @@
         flex-direction: column;
     }
 
-    .right__column h2 {
+    .right__column h3 {
+        font-size: 1.5em;
         margin-top: 2em;
         text-align: center;
         font-size: 1.1em;

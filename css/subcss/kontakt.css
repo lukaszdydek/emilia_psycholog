@@ -19,6 +19,7 @@
 }
 
 
+
 .contact__data td {
     padding: 0.3em;  
 }
@@ -27,6 +28,9 @@
     padding-top: 0;
 }
 
+.znanylekarz {
+    padding-top: 1.5%;
+}
 
 @media screen and (max-width:768px) {
    
@@ -36,11 +40,14 @@
 
     .right__column--middle {
         flex-direction: column;  
+        margin: 4em 0 0 0;
     }
 
-    .right__column--middle div:nth-child(2) {
-        margin: 3em 0 1em 0;
+    .znanylekarz {
+        margin: 0 0 4em 0;
     }
     
-   
+    .contact__section, .contact__map {
+        background-color: white;
+    }
 }

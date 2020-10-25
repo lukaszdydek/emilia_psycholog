@@ -55,7 +55,7 @@
     display: grid;
     grid-template-columns: 2fr 8fr;
     overflow-y: hidden;
-    background-image: url(../img/pexels-katie-e-3663036.jpg);
+    background-image: url(../img/mama_i_dziecko.jpg);
     background-size: cover;    
 }
 
@@ -107,7 +107,8 @@
 
 }
 
-.left__column h1 {
+.left__column h2 {
+    font-size:2em;
     padding-left: 2%;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     display:table-cell; 
@@ -187,7 +188,8 @@ display:table-cell;
     scroll-behavior: smooth;
 }
 
-.right__column h1 {
+.right__column h1, .right__column h2 {
+    font-size: 2em;
     border-left: solid 0.1em #3966f8;
     padding-left: 0.3em;
     margin-bottom: 0.5em;
@@ -195,7 +197,8 @@ display:table-cell;
     
 }
 
-.right__column h2 {
+.right__column h3 {
+    font-size: 1.5em;
     padding: 1em 0 0.5em 0;
     text-align: left;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -428,7 +431,7 @@ display: none;
     height: 99%;
 }
 
-.right__column h1 {
+.right__column h1, .right__column h2 {
     text-align: center;
     border: none;
 }
