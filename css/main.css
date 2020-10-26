@@ -45,6 +45,9 @@
     border-radius: 0 12px 12px 0;
 } 
 
+::marker {
+    color: #3966f8;
+}
 
 /*grid container for whole page*/
 .container {
@@ -72,6 +75,7 @@
     animation: wlot 0.5s ease-out forwards;
     height: 96%;
     margin: 0 5% 0 0;
+    box-shadow: 0 0 10px 5px #ccc;
 }
 
 .left__column div {
@@ -104,6 +108,7 @@
     width: 100%;
     display: table-cell; 
     vertical-align: middle;
+    
 
 }
 
@@ -160,6 +165,7 @@ display:table-cell;
 .left__column--contact td:hover {
     background-color: #3966f8;
     border-radius: 12px;
+    box-shadow: 0 0 2px 2px #3966f8;
 }
 
 
@@ -186,6 +192,7 @@ display:table-cell;
     scrollbar-color: rgba(57, 102, 248, 0.5) transparent;
     scrollbar-width: thin;
     scroll-behavior: smooth;
+    box-shadow: 0 0 10px 5px #ccc;
 }
 
 .right__column h1, .right__column h2 {
@@ -429,6 +436,7 @@ display: none;
 .right__column {
     display: block;
     height: 99%;
+    box-shadow: none;
 }
 
 .right__column h1, .right__column h2 {

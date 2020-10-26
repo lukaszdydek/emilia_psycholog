@@ -26,8 +26,17 @@
 }
 
 .section__text--list li {
-    line-height: 1.5em;
+    line-height: 1.5em;  
 }
+
+
+/*
+.section__text--list li::before {
+    content: url('../subcss/icons/arrow_right_circle.svg');
+    padding-right: 0.4em;
+  display: inline-block;
+  vertical-align: middle;
+}*/
 
 .right__column--middle p {
     text-indent: 0;
