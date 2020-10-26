@@ -22,9 +22,8 @@
     padding-top: 0;
 }
 
-.zl-url {
-    padding-left: 0;
-    margin-left: 0;
+.znanylekarz iframe {
+    float: left;
 }
 
 .right__column--middle div:nth-child(1) {
