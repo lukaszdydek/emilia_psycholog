@@ -16,11 +16,6 @@
    border-radius: 12px;
 }
 
-.right__column--middle {
-    background-color: white;
-
-}
-
 .right__column--bottom {    
     display: block;
 }
@@ -35,4 +30,7 @@
         display: block;
     }
 
+    .right__column--middle {
+        background-color: white;
+    }
 }

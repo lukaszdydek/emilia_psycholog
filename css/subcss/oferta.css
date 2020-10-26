@@ -11,11 +11,13 @@
 .section__image1, .section__image3 {
     float: left;
     width: 50%;
+    object-fit: cover;
 }
 
 .section__image2 {
     float: right;
     width: 50%;
+    object-fit: cover;
 }
 
 .section__text {
