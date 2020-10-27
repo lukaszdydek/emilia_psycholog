@@ -4,7 +4,7 @@
 
 .right__column--top {
     display: grid;
-    grid-template: 25% 25% / 15% 85%;
+    grid-template: 25% 25% / 20% 80%;
 }
 
 .right__column--top--photo {
