@@ -59,7 +59,7 @@
     grid-template-columns: 2fr 8fr;
     overflow-y: hidden;
     background-image: url(../img/czworka_dzieci_na_lace.jpg);
-    background-size: cover;    
+    background-size: cover; 
 }
 
 

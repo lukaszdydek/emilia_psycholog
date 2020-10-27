@@ -1,6 +1,10 @@
 
 /* Contact section */
 
+h1, h2, h3 {
+    font-weight: 300 !important;
+}
+
 .right__column--top {
     padding-bottom: 0;
 }
@@ -14,17 +18,10 @@
     flex-direction: row;  
 }
 
-.contact__section, .znanylekarz {
+.contact__section {
     padding: 1.5% 1.5% 2.5% 1.5%;
 }
 
-.znanylekarz h3 {
-    padding-top: 0;
-}
-
-.znanylekarz iframe {
-    float: left;
-}
 
 .right__column--middle div:nth-child(1) {
     flex-basis: 50%;
@@ -45,6 +42,13 @@ tr:nth-child(4) td:nth-child(2) {
 }
 
 
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
 
 @media screen and (max-width:768px) {
    
@@ -57,12 +61,8 @@ tr:nth-child(4) td:nth-child(2) {
         
     }
 
-    .contact__section, .znanylekarz {
+    .contact__section {
         padding-bottom: 4em;
-    }
-
-    .znanylekarz h3 {
-        padding: 1em 0 0.5em 0;
     }
     
     .contact__section {

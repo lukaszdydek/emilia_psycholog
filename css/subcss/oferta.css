@@ -42,10 +42,6 @@
     text-indent: 0;
 }
 
-.right__column--middle2 {
-    padding: 1.5% 1.5% 2.5% 1.5%;
-}
-
 .cta__button {
     position: relative;
     background: linear-gradient(#e66465, rgb(255, 245, 0));
@@ -103,11 +99,6 @@
 
     .right__column--top {
         padding-bottom: 0;
-    }
-
-    .right__column--middle2 {
-        background-color: white;
-        padding-bottom: 4em;
     }
     
     .cta__button {
