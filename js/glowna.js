@@ -19,7 +19,7 @@ for (i = 0; i < collapsible_button.length; i++) {
     )
 }
 
-/*cta button*/
+/*cta button href attribute change based on window width*/
 
 const cta_button = document.querySelector(".cta__button");
 
