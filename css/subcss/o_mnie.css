@@ -1,7 +1,3 @@
-.right__column li {
-    line-height: 1.7em;
-}
-
 .right__column--top {
     display: grid;
     grid-template: 25% 25% / 20% 80%;

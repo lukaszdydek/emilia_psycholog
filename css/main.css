@@ -71,7 +71,7 @@
     max-height: fit-content;
     left: -3000px;
     position: relative;
-    grid-template-rows: 6fr 2fr 1fr;
+    grid-template-rows: 72% 18% 10%;
     animation: wlot 0.5s ease-out forwards;
     height: 96%;
     margin: 0 5% 0 0;
@@ -216,6 +216,10 @@ display:table-cell;
     line-height: 1.7em;
     text-indent: 2.5em;
     
+}
+.right__column li {
+    line-height: 1.2em;
+    padding: 0.3em 0 0.3em 0;
 }
 
 .right__column a:hover {
