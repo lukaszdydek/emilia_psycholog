@@ -253,17 +253,7 @@ display:table-cell;
 
 @media screen and (max-width:768px) {
     
-    ::-webkit-scrollbar {
-        display: none;
-        background: none;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-        display: none;
-        background: none;
-        -webkit-border-radius: none;
-        border-radius: none;
-    }
+
     
 .container {
     display: block;
@@ -271,6 +261,19 @@ display:table-cell;
     background-color: #3966f8;
     background-image: none;
 }
+
+::-webkit-scrollbar {
+    display: none;
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    display: none;
+    background: none;
+    -webkit-border-radius: none;
+    border-radius: none;
+}
+
 
 /* mobile menu */
 
@@ -403,7 +406,7 @@ display:table-cell;
     width: 100%;
     background-color: rgba(12, 46, 110, 0.9);
     text-align: center;
-    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: ease-out 0.5s;
     
 }
 
@@ -439,8 +442,11 @@ display: none;
 
 .right__column {
     display: block;
+    left: 0;
     height: 99%;
     box-shadow: none;
+    animation: none;
+    
 }
 
 .right__column h1, .right__column h2 {

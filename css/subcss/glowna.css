@@ -1,4 +1,7 @@
-
+#right__column--signature {
+    text-align: right !important;
+    padding-right: 5%;
+}
 
 .right__column--help {
     display: flex;
@@ -92,6 +95,10 @@
 
 @media screen and (max-width:768px) {
     
+    #right__column--signature {
+        padding-right: 2%;
+    }
+
     .right__column--help {
         display: flex;
         flex-direction: column;
