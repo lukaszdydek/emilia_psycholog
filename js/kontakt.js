@@ -8,7 +8,7 @@ if (window.innerWidth < 768) {
 // Initialize and add the map
 function initMap() {
   // The location of Uluru
-  const rzelek = { lat: 50.033249, lng: 22.034834 };
+  const rzelek = { lat: 50.03361, lng: 22.03726 };
   // The map, centered at Uluru
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 14,

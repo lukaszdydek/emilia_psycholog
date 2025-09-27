@@ -12,5 +12,5 @@ if (window.innerWidth < 768) {
 const cta_button = document.querySelector(".cta__button");
 
 if (window.innerWidth < 768) {
-  cta_button.setAttribute("href", "tel:509105711");
+  cta_button.setAttribute("href", "mailto:kontakt@psychologdzieciecy.eu");
 }

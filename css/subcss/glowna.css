@@ -1,3 +1,10 @@
+.no_vacancies_message {
+    border: solid red 1px;
+    text-indent: 0em !important;
+    text-align: center;
+    font-size: 1.2em;
+}
+
 #right__column--signature {
     text-align: right !important;
     padding-right: 5%;
@@ -110,6 +117,12 @@
     
     .collapsible__button {
         font-size: 0.9em;
+        font-stretch: condensed;
+        width: 98%;
+    }
+
+    .collapsible__content--active {
+        width: 98%;
     }
 
     .hero__image--mobile3, .hero__image--mobile4 {
