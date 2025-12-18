@@ -98,6 +98,7 @@
     background: linear-gradient(#e66465, #e66465);
     transition: 0.5s ease-in-out;
     border: none !important;
+    color: white;
 }
 
 @media screen and (max-width:768px) {
