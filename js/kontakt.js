@@ -23,8 +23,8 @@ function initMap() {
 
 //Email 1 obfuscation
   var user1 = 'kontakt';
-  var domain1 = 'psychologdzieciecy';
-  var tld1 = 'eu';
+  var domain1 = 'emiliachaber';
+  var tld1 = 'pl';
   
   var user2 = 'chaberpsycholog';
   var domain2 = 'gmail';

@@ -24,5 +24,5 @@ for (i = 0; i < collapsible_button.length; i++) {
 const cta_button = document.querySelector(".cta__button");
 
 if (window.innerWidth < 768) {
-  cta_button.setAttribute("href", "mailto:kontakt@psychologdzieciecy.eu");
+  cta_button.setAttribute("href", "mailto:kontakt@emiliachaber.pl");
 }
